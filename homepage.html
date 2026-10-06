@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- 【Meta 商家/網域驗證代碼放置處】 -->
+  <!-- 若 Meta 審核要求「新增中繼標籤至 HTML 原始碼」，請將 Meta 給予的代碼貼在此處： -->
+  <!-- <meta name="facebook-domain-verification" content="您的驗證碼放這裡" /> -->
+
+  <title>Allison沒有結論 :: Allison Without Conclusions - 官方網站</title>
+  <meta name="description" content="Allison 沒有結論 :: Allison Without Conclusions，提供專業內容分享、專案合作與諮詢服務。">
+
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-page: #f9fafb;
+      --bg-card: #ffffff;
+      --border-color: #e5e7eb;
+      --accent-color: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 48px 36px 32px;
+      border-bottom: 1px solid var(--border-color);
+      background: linear-gradient(to bottom, #ffffff, #fcfdfe);
+    }
+
+    .brand-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    main {
+      padding: 36px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.2em;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 18px;
+      background: #fafafa;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* 商家驗證重點：聯絡資訊區塊 */
+    .contact-box {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
+    .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-label {
+      width: 140px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .contact-value {
+      flex: 1;
+      color: var(--text-muted);
+    }
+
+    .contact-value a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .contact-value a:hover {
+      text-decoration: underline;
+    }
+
+    /* 條款內容折疊區 */
+    details {
+      background-color: #f9fafb;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      transition: background 0.2s ease;
+    }
+
+    details[open] {
+      background-color: #ffffff;
+    }
+
+    summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-main);
+      user-select: none;
+    }
+
+    .policy-content {
+      margin-top: 14px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .policy-content ul {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 24px 36px;
+      background: #fafafa;
+      text-align: center;
+      font-size: 0.88rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header, main, footer {
+        padding: 24px 20px;
+      }
+      .brand-title {
+        font-size: 1.6rem;
+      }
+      .contact-label {
+        width: 100%;
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 頁頭與品牌名稱（務必與 Meta 登記名稱完全一致） -->
+    <header>
+      <h1 class="brand-title">Allison 沒有結論 :: Allison Without Conclusions</h1>
+      <p class="brand-subtitle">
+        專注於專業知識分享、數位內容創作與技術交流的官方專頁。
+      </p>
+    </header>
+
+    <main>
+      <!-- 關於我們 / 服務說明（證明專頁具體在做什麼） -->
+      <section id="about">
+        <h2>關於我們</h2>
+        <p>
+          歡迎造訪我們的官方網站。本網站為 Facebook 官方粉絲專頁之指定對外入口，致力於提供高品質的專業內容、專題文章與多元社群交流。
+        </p>
+        <p>
+          我們持續關注科技發展、人文思維與跨領域實踐，並透過社交平台與讀者建立緊密互動。
+        </p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>原創內容發表</h3>
+            <p>定期產出深度技術筆記、長篇心得與跨領域實踐分享。</p>
+          </div>
+          <div class="card">
+            <h3>專案與社群交流</h3>
+            <p>與業界夥伴合作推廣開源專案、專業研討與知識分享。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 核心審核重點：官方聯絡資訊 -->
+      <section id="contact">
+        <h2>聯絡資訊</h2>
+        <p>如需業務合作、版權授權或相關諮詢，請透過以下官方管道聯繫：</p>
+        
+        <div class="contact-box">
+          <div class="contact-item">
+            <span class="contact-label">官方實體/登記名稱</span>
+            <span class="contact-value">Allison 沒有結論 :: Allison Without Conclusions</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">電子郵件</span>
+            <span class="contact-value"><a href="mailto:yun.liu0720@gmail.com">yun.liu0720@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">聯絡電話</span>
+            <span class="contact-value">+886-988-379-817</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">服務所在地</span>
+            <span class="contact-value">台灣（Taiwan, R.O.C.）</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Facebook 專頁</span>
+            <span class="contact-value"><a href="https://www.facebook.com/profile.php?id=61578645304698" target="_blank" rel="noopener noreferrer">前往官方粉絲專頁</a></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 審核加分項：隱私權政策與服務條款 -->
+      <section id="legal">
+        <h2>隱私權與服務條款</h2>
+
+        <details>
+          <summary>隱私權政策（Privacy Policy）</summary>
+          <div class="policy-content">
+            <p>本網站非常重視您的個人隱私權。請詳細閱讀以下隱私權保護政策：</p>
+            <ul>
+              <li><strong>資料收集：</strong> 本網站為靜態展示頁面，本身不會主動透過 Cookie 收集您的敏感財務或個人資料。若您主動透過 Email 或社群私訊與我們聯繫，我們僅將您的聯絡資訊用於回覆與溝通需求。</li>
+              <li><strong>第三方連結：</strong> 本站包含外部連結（如 Facebook 粉絲專頁）。您點選連結進入第三方平台後，其隱私權規範適用該平台之規範，本站不承擔外部平台之資訊保護責任。</li>
+              <li><strong>資料安全：</strong> 我們採取合理技術防護措施保障通訊紀錄之安全，絕不會在未經授權下將您的聯絡方式出租、出售或提供給第三方。</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>服務條款（Terms of Service）</summary>
+          <div class="policy-content">
+            <p>歡迎造訪本網站，造訪本站即代表您同意遵守以下規範：</p>
+            <ul>
+              <li><strong>智慧財產權：</strong> 本網站所有刊載內容（包含文字、圖片、商標、排版設計）均受智慧財產權法保護。未經事前書面授權，請勿擅自重製、轉載或作為商業利用。</li>
+              <li><strong>免責聲明：</strong> 本站分享之內容僅供參考與交流之用，對於因使用本站資訊而產生的任何直接或間接影響，本站不負保證或賠償責任。</li>
+              <li><strong>條款修訂：</strong> 本站保留隨時更新本條款之權利，修改後之規範於本頁面發布後即刻生效。</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <!-- 頁尾宣告 -->
+    <footer>
+      <p>&copy; 2026 Allison 沒有結論 :: Allison Without Conclusions. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
